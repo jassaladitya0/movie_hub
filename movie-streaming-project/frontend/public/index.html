@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Streaming Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Movie Hub Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#series">TV Series</a></li>
+                <li><a href="#genres">Genres</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search movies..." class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="user-actions">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Unlimited Movies, TV Shows, and More</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <div class="hero-cta">
+                    <button class="watch-free-btn">Watch Free</button>
+                    <button class="plans-btn">View Plans</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Movies -->
+        <section class="trending-section">
+            <h2>Trending Movies</h2>
+            <div class="movie-grid" id="trending-movies">
+                <!-- Movies will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Top Rated Movies -->
+        <section class="top-rated-section">
+            <h2>Top Rated Movies</h2>
+            <div class="movie-grid" id="top-rated-movies">
+                <!-- Movies will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Genres Section -->
+        <section class="genres-section">
+            <h2>Browse by Genre</h2>
+            <div class="genre-grid">
+                <div class="genre-card" data-genre="action">Action</div>
+                <div class="genre-card" data-genre="comedy">Comedy</div>
+                <div class="genre-card" data-genre="drama">Drama</div>
+                <div class="genre-card" data-genre="sci-fi">Sci-Fi</div>
+                <div class="genre-card" data-genre="horror">Horror</div>
+                <div class="genre-card" data-genre="romance">Romance</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 Movie Streaming Website. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
